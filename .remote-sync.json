@@ -1,0 +1,15 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "dev.spayaz.com",
+  "target": "/public_html/wp-content/themes/spay-neuter-clinic",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "devspayaz",
+  "password": "6y9b3GBFbvou",
+  "watch": []
+}

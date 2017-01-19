@@ -18,6 +18,13 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <?php if(is_front_page()){
+
+    }else{ ?>
+      <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
+        <h1><?php echo the_title(); ?></h1>
+      </div>
+    <?php } ?>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">

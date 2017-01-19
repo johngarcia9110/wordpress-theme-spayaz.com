@@ -2,3 +2,29 @@
   -webkit-justify-content: flex-end;
    justify-content: flex-end;
 }
+
+header{
+  background: #0083ca;
+  .navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-weight: bold;
+    &:hover, &:active, &:focus{
+      color: #e4e4e4;
+    }
+  }
+  .navbar-light .navbar-nav .nav-link.active{
+    color: #ffc50a;
+  }
+  .navbar .navbar-brand img {
+    max-width: 250px;
+  }
+}
+
+.page-header{
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+} h1 {
+  color: #FFF;
+  text-shadow: 1px 1px 20px black;
+}
