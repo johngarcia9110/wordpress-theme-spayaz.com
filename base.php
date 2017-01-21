@@ -18,25 +18,33 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php if(is_front_page()){
-
-    }else{ ?>
+    <?php if(is_single()){ ?>
       <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
         <h1><?php echo the_title(); ?></h1>
       </div>
-    <?php } ?>
+    <?php }elseif(is_post_type_archive()){ ?>
+      <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
+        <h1><?php post_type_archive_title(); ?></h1>
+      </div>
+      <?php if(is_post_type_archive( 'store_locations' )){
+        get_template_part('templates/cpt-templates/location', 'cat');
+      }elseif(is_post_type_archive( 'service_offerings' )){
+        get_template_part('templates/cpt-templates/services', 'cat');
+      }?>
+    <?php }else{ ?>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
+        <?php if (Setup\display_sidebar() && !is_post_type_archive( 'service_offerings' || 'store_locations' )) : ?>
           <aside class="sidebar">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
+    <?php } ?>
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
