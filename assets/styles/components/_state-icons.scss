@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'StateFaceRegular';
+    src: url('../fonts/stateface-regular-webfont.eot');
+    src: url('../fonts/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/stateface-regular-webfont.woff') format('woff'),
+         url('../fonts/stateface-regular-webfont.ttf') format('truetype'),
+         url('../fonts/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.state-icon{
+  font-family: 'StateFaceRegular';
+  font-size: 30px;
+}
+
+.state-alabama{
+  &:before{
+    content: 'B';
+  }
+}
+
+.state-arizona{
+  &:before{
+    content: 'D';
+  }
+}
+
+.state-alaska{
+  &:before{
+    content: 'A';
+  }
+}
+
+.state-arkansas{
+  &:before{
+    content: 'C';
+  }
+}
+
+.state-california{
+  &:before{
+    content: 'E';
+  }
+}
+
+.state-colorado{
+  &:before{
+    content: 'F';
+  }
+}
+
+.state-connecticut{
+  &:before{
+    content: 'G';
+  }
+}
+
+.state-delaware{
+  &:before{
+    content: 'H';
+  }
+}
+
+.state-dc{
+  &:before{
+    content: 'y';
+  }
+}
+
+.state-florida{
+  &:before{
+    content: 'I';
+  }
+}
+
+.state-georgia{
+  &:before{
+    content: 'J';
+  }
+}
+
+.state-hawaii{
+  &:before{
+    content: 'K';
+  }
+}
+
+.state-idaho{
+  &:before{
+    content: 'M';
+  }
+}
+
+.state-illinios{
+  &:before{
+    content: 'N';
+  }
+}
+
+.state-indiana{
+  &:before{
+    content: 'O';
+  }
+}
+
+.state-iowa{
+  &:before{
+    content: 'L';
+  }
+}
+
+.state-kansas{
+  &:before{
+    content: 'P';
+  }
+}
+
+.state-kentucky{
+  &:before{
+    content: 'Q';
+  }
+}
+
+.state-louisiana{
+  &:before{
+    content: 'R';
+  }
+}
+
+.state-maine{
+  &:before{
+    content: 'U';
+  }
+}
+
+.state-maryland{
+  &:before{
+    content: 'T';
+  }
+}
+
+.state-massachusetts{
+  &:before{
+    content: 'S';
+  }
+}
+
+.state-michigan{
+  &:before{
+    content: 'V';
+  }
+}
+
+.state-minnesota{
+  &:before{
+    content: 'W';
+  }
+}
+
+.state-mississippi{
+  &:before{
+    content: 'Y';
+  }
+}
+
+.state-missouri{
+  &:before{
+    content: 'X';
+  }
+}
+
+.state-montana{
+  &:before{
+    content: 'Z';
+  }
+}
+
+.state-nebraska{
+  &:before{
+    content: 'c';
+  }
+}
+
+.state-nevada{
+  &:before{
+    content: 'g';
+  }
+}
+
+.state-newhampshire{
+  &:before{
+    content: 'd';
+  }
+}
+
+.state-newjersey{
+  &:before{
+    content: 'e';
+  }
+}
+
+.state-newmexico{
+  &:before{
+    content: 'f';
+  }
+}
+
+.state-newyork{
+  &:before{
+    content: 'd';
+  }
+}
+
+.state-northcarolina{
+  &:before{
+    content: 'a';
+  }
+}
+
+.state-northdakota{
+  &:before{
+    content: 'b';
+  }
+}
+
+.state-ohio{
+  &:before{
+    content: 'i';
+  }
+}
+
+.state-oklahoma{
+  &:before{
+    content: 'j';
+  }
+}
+
+.state-oregon{
+  &:before{
+    content: 'k';
+  }
+}
+
+.state-pennsylvania{
+  &:before{
+    content: 'l';
+  }
+}
+
+.state-rodeisland{
+  &:before{
+    content: 'm';
+  }
+}
+
+.state-rodeisland{
+  &:before{
+    content: 'm';
+  }
+}
+
+.state-southcarolina{
+  &:before{
+    content: 'n';
+  }
+}
+
+.state-southdakota{
+  &:before{
+    content: 'o';
+  }
+}
+
+.state-tennessee{
+  &:before{
+    content: 'p';
+  }
+}
+
+.state-texas{
+  &:before{
+    content: 'q';
+  }
+}
+
+.state-utah{
+  &:before{
+    content: 'r';
+  }
+}
+
+.state-vermont{
+  &:before{
+    content: 't';
+  }
+}
+
+.state-virginia{
+  &:before{
+    content: 's';
+  }
+}
+
+.state-westvirgina{
+  &:before{
+    content: 'w';
+  }
+}
+
+.state-wisconsin{
+  &:before{
+    content: 'v';
+  }
+}
+
+.state-wyoming{
+  &:before{
+    content: 'x';
+  }
+}

@@ -9,7 +9,7 @@
         <div class="col-sm-3">
           <div class="state-card">
             <div class="state-icon">
-              <i class="state-icon state-arizona"></i>
+              <i class="state-icon <?php echo 'state-' . strtolower($term->name); ?>"></i>
             </div>
           <h2><a href="<?php echo get_term_link($term->slug, $taxonomy); ?>"><?php echo $term->name; ?></a></h2>
           </div>

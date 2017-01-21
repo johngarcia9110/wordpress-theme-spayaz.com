@@ -4,25 +4,8 @@
 // bower:scss
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
-@font-face {
-    font-family: 'StateFaceRegular';
-    src: url('../fonts/stateface-regular-webfont.eot');
-    src: url('../fonts/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/stateface-regular-webfont.woff') format('woff'),
-         url('../fonts/stateface-regular-webfont.ttf') format('truetype'),
-         url('../fonts/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-.state-icon{
-  font-family: 'StateFaceRegular';
-}
-.state-arizona{
-  &:before{
-    content: 'D';
-  }
-}
-@import "components/state-icons"
+
+@import "components/state-icons";
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
