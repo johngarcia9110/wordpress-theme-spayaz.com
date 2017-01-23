@@ -22,6 +22,12 @@ use Roots\Sage\Wrapper;
       <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
         <h1><?php echo the_title(); ?></h1>
       </div>
+      <div class="wrap container" role="document">
+        <div class="content row">
+          <?php include Wrapper\template_path(); ?>
+        </div>
+      </div>
+      
     <?php }elseif(is_post_type_archive()){ ?>
       <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
         <h1><?php post_type_archive_title(); ?></h1>
@@ -30,8 +36,9 @@ use Roots\Sage\Wrapper;
         get_template_part('templates/cpt-templates/location', 'cat');
       }elseif(is_post_type_archive( 'service_offerings' )){
         get_template_part('templates/cpt-templates/services', 'cat');
-      }?>
-    <?php }else{ ?>
+      }elseif(is_post_type_archive( 'location_state' )){
+        get_template_part('templates/cpt-templates/location-state', 'cat'); }?>
+      <?php }else{ ?>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
