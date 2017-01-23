@@ -9,6 +9,23 @@ use Roots\Sage\Assets;
  */
 function customize_register($wp_customize) {
   $wp_customize->get_setting('blogname')->transport = 'postMessage';
+
+  $wp_customize->add_section(
+  'footer_section',
+  array(
+  'title' => 'Footer Settings',
+  'description' => 'Edit the footer area.',
+  'priority' => 55,
+  )
+  );
+
+  $wp_customize->add_setting(
+'copyright_textbox',
+array(
+'default' => 'Copyright &copy; 2016. All Rights Reserved.',
+)
+);
+
 }
 add_action('customize_register', __NAMESPACE__ . '\\customize_register');
 

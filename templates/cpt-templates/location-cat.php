@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row space-bottom">
   <?php
     $taxonomy = 'location_state';
     $terms = get_terms($taxonomy);

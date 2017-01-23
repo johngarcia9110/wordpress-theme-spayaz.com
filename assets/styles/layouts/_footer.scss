@@ -1,0 +1,19 @@
+footer{
+  background: #155f99;
+  color: white;
+  padding: 40px 0px 1px 0px;
+}
+
+#footer-navigation{
+  li a{
+    color: white;
+    font-weight: bold;
+    &:hover, &:active, &:focus{
+      color: #e4e4e4;
+    }
+  }
+}
+
+.footer-logo{
+  max-width: 200px;
+}
