@@ -1,3 +1,13 @@
+.post-type-archive-store_locationsg{
+  .page-header{
+    background-image: url('http://dev.spayaz.com/wp-content/uploads/2017/01/POST-THIS-IS-IT-20170121T004601Z.jpeg');
+  }
+}
+
+.state-card-column{
+  min-height: 250px;
+}
+
 .state-card{
   padding: 40px;
   background: rgba(218, 221, 236, 0.37);
@@ -28,5 +38,20 @@
     margin: auto;
     margin-bottom: 20px;
     color: #f8c609;
+  }
+}
+
+/* 
+
+location state listings
+
+*/
+
+.location-listing{
+  padding: 10px;
+  background: #f1f1f1;
+  margin-bottom: 25px;
+  header{
+    background: none;
   }
 }

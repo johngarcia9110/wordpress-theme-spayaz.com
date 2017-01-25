@@ -29,16 +29,18 @@ use Roots\Sage\Wrapper;
       </div>
       
     <?php }elseif(is_post_type_archive()){ ?>
-      <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
+      <div class="page-header">
         <h1><?php post_type_archive_title(); ?></h1>
       </div>
-      <?php if(is_post_type_archive( 'store_locations' )){
-        get_template_part('templates/cpt-templates/location', 'cat');
-      }elseif(is_post_type_archive( 'service_offerings' )){
-        get_template_part('templates/cpt-templates/services', 'cat');
-      }elseif(is_post_type_archive( 'location_state' )){
-        get_template_part('templates/cpt-templates/location-state', 'cat'); }?>
+        <?php if(is_post_type_archive( 'store_locations' )){
+          get_template_part('templates/cpt-templates/location', 'cat');
+        }elseif(is_post_type_archive( 'service_offerings' )){
+          get_template_part('templates/cpt-templates/services', 'cat');
+        }elseif(taxonomy_exists( 'location_state' )){
+          get_template_part('templates/cpt-templates/location-state', 'cat'); }?>
+      
       <?php }else{ ?>
+    <?php get_template_part('templates/page', 'header');?>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">

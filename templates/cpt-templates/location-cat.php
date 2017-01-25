@@ -6,7 +6,7 @@
 
     if ( $terms && !is_wp_error( $terms ) ) : ?>
       <?php foreach ( $terms as $term ) { ?>
-        <div class="col-sm-3">
+        <div class="col-sm-3 state-card-column">
             <div class="state-card text-center" onclick="location.href='<?php echo get_term_link($term->slug, $taxonomy); ?>';">
               <div class="state-icon-wrapper">
                 <i class="state-icon <?php echo 'state-' . strtolower($term->name); ?>"></i>
