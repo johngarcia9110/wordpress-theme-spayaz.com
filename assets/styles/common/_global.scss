@@ -7,3 +7,64 @@ a:focus, a:hover {
 .space-bottom{
   margin-bottom: 45px;
 }
+
+body{
+  padding-top: 162px;
+  background-image: url(../images/groovepaper.png);
+  color: $main-text;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Custom Buttons
+
+.btn-promo{
+  position: fixed;
+  top: 50%;
+  right: -59px;
+  z-index: 999999;
+  transform: rotate(-90deg);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: $brand-hightlight-secondary;
+  border: none;
+  &:hover{
+    background-color: $brand-hightlight-secondary;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .btn-promo{
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    transform: rotate(0deg);
+  }
+}
+
+.btn-download{
+  background: $brand-hightlight-secondary;
+  color: $white;
+  -webkit-appearance: initial;
+}
+
+// WP Admin bar fix 
+@mixin admin-sticky-fix( $offset: 0 ) {
+  $narrow-offset: 46px;
+  $wide-offset: 32px;
+  @if $offset != 0 and type-of($offset) == 'number' {
+    $narrow-offset: $narrow-offset + $offset;
+    $wide-offset: $wide-offset + $offset;
+  }
+  .admin-bar & {
+    top: $narrow-offset;
+    @media screen and (min-width: 783px) {
+      top: $wide-offset;
+    }
+  }
+}
+
+.fixed-top{
+  @include admin-sticky-fix();
+}

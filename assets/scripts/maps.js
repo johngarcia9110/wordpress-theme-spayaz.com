@@ -1,5 +1,5 @@
 (function($) {
-console.log('maps loaded');
+	console.log('maps loaded');
 /*
 *  render_map
 *

@@ -19,30 +19,31 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <?php if(is_single()){ ?>
-      <div class="page-header" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);background-repeat:no-repeat; background-size: cover;">
+      <div class="page-header">
         <h1><?php echo the_title(); ?></h1>
       </div>
       <div class="wrap container" role="document">
-        <div class="content row">
+        <div class="content row space-bottom">
           <?php include Wrapper\template_path(); ?>
         </div>
       </div>
       
     <?php }elseif(is_post_type_archive()){ ?>
-      <div class="page-header">
-        <h1><?php post_type_archive_title(); ?></h1>
-      </div>
-        <?php if(is_post_type_archive( 'store_locations' )){
-          get_template_part('templates/cpt-templates/location', 'cat');
-        }elseif(is_post_type_archive( 'service_offerings' )){
-          get_template_part('templates/cpt-templates/services', 'cat');
-        }elseif(taxonomy_exists( 'location_state' )){
-          get_template_part('templates/cpt-templates/location-state', 'cat'); }?>
+        <?php if(is_post_type_archive( 'store_locations' )){?>
+          <div class="page-header" style="background-image : url('<?php echo esc_url(get_theme_mod("sage_location_page_header_section")); ?>'); background-repeat: no-repeat; background-size: cover;">
+            <h1><?php post_type_archive_title(); ?></h1>
+          </div>
+        <?php get_template_part('templates/cpt-templates/location', 'cat');
+      }elseif(taxonomy_exists( 'location_state' )){ ?>
+        <div class="page-header">
+          <h1><?php post_type_archive_title(); ?></h1>
+        </div>
+        <?php get_template_part('templates/cpt-templates/location-state', 'cat'); }?>
       
       <?php }else{ ?>
     <?php get_template_part('templates/page', 'header');?>
     <div class="wrap container" role="document">
-      <div class="content row">
+      <div class="content row space-bottom">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->

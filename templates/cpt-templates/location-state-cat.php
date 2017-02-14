@@ -1,4 +1,4 @@
-<article <?php post_class('location-listing'); ?>>
+<article <?php post_class('location-listing container'); ?>>
   <?php 
     $hours = get_field('location_hours');
     $address = get_field('location_address');

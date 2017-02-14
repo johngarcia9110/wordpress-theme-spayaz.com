@@ -11,6 +11,11 @@
         "scripts/maps.js"
       ]
     },
+    "scroll.js": {
+      "files": [
+        "scripts/scroll.js"
+      ]
+    },
     "main.css": {
       "files": [
         "styles/main.scss"

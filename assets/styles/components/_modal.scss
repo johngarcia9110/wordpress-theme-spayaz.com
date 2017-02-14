@@ -1,0 +1,12 @@
+.modal-content{
+  font-weight: bold;
+  color: 3d4780;
+}
+
+.gform, .gform_button{
+  width: 100%;
+  font-weight: bold;
+  &:hover{
+    color: #fff;
+  }
+}

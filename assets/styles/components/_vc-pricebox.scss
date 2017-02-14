@@ -1,0 +1,77 @@
+.spayaz-pricebox{
+  text-align: center;
+  width: 100%;
+  background: lighten($light-gray, 30%);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  min-height: 390px;
+  border-radius: 4px;
+  overflow: hidden;
+  .spayaz-pricebox-title{
+    background: darken($gray, 10%);
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after{
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      margin-left: -20px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid darken($gray, 10%);
+    }
+  }
+  .spayaz-pricebox-price{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: darken($brand-primary, 10%);
+    color: white;
+    border-radius: 50%;
+    line-height: 100px;
+    font-weight: bold;
+  }
+  .spayaz-pricebox-text{
+    padding: 20px;
+    color: $main-text;
+  }
+}
+
+
+// Price Table
+
+.table-row{
+  margin: 10px;
+  background: lighten($brand-secordary, 15%);
+  padding: 10px;
+  border-bottom: 2px solid rgba(79, 93, 117, 0.32);
+  border-radius: 4px;
+  .spayaz-pricetable-item{
+    font-size: 20px;
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+  }
+  .spayaz-pricetable-item-price{
+    width: 80px;
+    height: 80px;
+    background: darken($brand-primary, 10%);
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 80px;
+    color: $white;
+  }
+}
+
+@media (max-width: 576px){
+  .spayaz-pricetable-item{
+      text-align: center!important;
+      padding-bottom: 12px;
+  }
+}

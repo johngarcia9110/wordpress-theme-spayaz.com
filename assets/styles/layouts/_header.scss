@@ -3,20 +3,48 @@
    justify-content: flex-end;
 }
 
+.fixed-top{
+  z-index: 999;
+  box-shadow: 0px 0px 12px #a9a8a8;
+  background: $nav-background;
+}
+
 header{
-  background: #0083ca;
+  .navbar{
+    padding: 18px 0px;
+  }
   .navbar-light .navbar-nav .nav-link{
-    color: white;
+    color: $brand-primary;
     font-weight: bold;
     &:hover, &:active, &:focus{
-      color: #e4e4e4;
+      color: darken($brand-primary, 10%);
     }
   }
   .navbar-light .navbar-nav .nav-link.active{
-    color: #ffc50a;
+    color: darken($brand-hightlight-secondary, 10%);
   }
   .navbar .navbar-brand img {
     max-width: 250px;
+    transition: all 200ms ease-in-out;
+  }
+  .nav-top-section{
+    background: $brand-primary;
+    .location-social{
+      background: transparent;
+      padding: 2px;
+      color: $nav-background;
+      margin: 0px;
+      i{
+        background: transparent;
+        width: 30px;
+        font-size: 18px;
+        color: $brand-primary;
+        background: $nav-background;
+        margin: 8px 2px;
+        line-height: 20px;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
@@ -27,4 +55,57 @@ header{
 } h1 {
   color: #FFF;
   text-shadow: 1px 1px 20px black;
+}
+
+@media screen and (max-width: 48em) {
+  .nav-top-section{
+    transition: all 200ms ease-in-out;
+  }
+  
+  .header-wrap{
+    .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar{
+      padding-left: 5px;
+      padding-right: 5px;  
+    }
+    .navbar-toggler{
+      background: $white;
+      color: $dark-gray;
+    }
+    .navbar-toggler-right{
+      right: 5px;
+    }
+    .navbar-toggler-text{
+      display: block;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0px;
+      font-size: 12px;
+      color: $nav-text-color;
+    }
+    .nav{
+      margin-top: 20px;
+      li{
+        background: $white;
+        text-align: center;
+      }
+      .nav-link{
+        color: $gray;
+      }
+      .active{
+        color: $dark-gray;
+      }
+    }
+  }
+  header .navbar-light .navbar-nav .nav-link {
+    color: $dark-gray;
+    font-weight: 700;
+    &:active, &:hover{
+      color: #878a9c;
+    }
+  }
 }

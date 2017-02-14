@@ -26,3 +26,16 @@
 @import "layouts/posts";
 @import "layouts/tinymce";
 @import "components/locations";
+@import "components/store-location-single";
+@import "components/services";
+@import "components/vc-pricebox";
+@import "components/modal";
+@import "components/blog-post-summary";
+@import "components/blog-post-full";
+
+
+@include media-breakpoint-up(sm) {
+  .spayaz-pricetable-item{
+    text-align: left;
+  }
+}

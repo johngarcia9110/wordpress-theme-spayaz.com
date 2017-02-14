@@ -1,0 +1,14 @@
+.blog-post-full{
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  header{
+    background: none;
+  }
+  .wp-post-image{
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -1,15 +1,25 @@
 footer{
-  background: #155f99;
-  color: white;
+  background: lighten($brand-secordary, 10%);
   padding: 40px 0px 1px 0px;
+  p{
+    color: white;
+  }
+  .copyright{
+    background: darken($brand-primary, 10%);
+    margin: 0;
+    padding: 10px;
+  }
+  .footer-content{
+    padding-bottom: 35px;
+  }
 }
 
 #footer-navigation{
   li a{
-    color: white;
+    color: $main-text;
     font-weight: bold;
     &:hover, &:active, &:focus{
-      color: #e4e4e4;
+      color: lighten($main-text, 20%);
     }
   }
 }

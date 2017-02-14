@@ -1,0 +1,21 @@
+.location-store-infoblock{
+  background: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.location-social{
+  padding: 10px;
+  background: $light-gray;
+  color: $dark-gray;
+  margin-bottom: 20px;
+  i{
+    font-size: 22px;
+    color: $dark-gray;
+    width: 40px;
+    background: #d5d9e2;
+    padding: 5px;
+    text-align: center;
+    margin: 0px 4px;
+  }
+}

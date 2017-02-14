@@ -1,0 +1,31 @@
+.blog-post-summary{
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  header{
+    background: none;
+    h2{
+      a{
+        color: $gray;
+      }
+    }
+    .byline{
+      display: none;
+    }
+  }
+  .entry-summary{
+    padding: 10px;
+    .read-more{
+      display: block;
+      padding: 15px;
+      background: #8d98ab;
+      max-width: 200px;
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      border-radius: 4px;
+    }
+  }
+}

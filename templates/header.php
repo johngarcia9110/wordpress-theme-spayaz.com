@@ -1,11 +1,29 @@
-<header>
+<header class="fixed-top">
+  <div class="nav-top-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          
+        </div>
+        <div class="col-sm-6">
+          <div class="location-social pull-right">
+            <span>Follow Us: </span>
+            <a href="<?php echo $facebook ?>"><i class="fa fa-facebook"></i></a>
+            <a href="<?php echo $yelp ?>"><i class="fa fa-yelp"></i></a>
+            <a href="https://twitter.com/wearespayneuter"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="header-wrap">
     <div class="container">
       <nav class="navbar navbar-toggleable-md navbar-light">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerMain" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-text">Menu</span>
         </button>
-        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><img src="http://dev.spayaz.com/wp-content/uploads/2017/01/SNCBanner.png" alt="Spay Neuter Clinic Logo"></a>
+        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><img class="brand-logo" src="http://dev.spayaz.com/wp-content/uploads/2017/02/SNCBanner.png" alt="Spay Neuter Clinic Logo"></a>
           <?php
           // Use the new walker
           wp_nav_menu([
