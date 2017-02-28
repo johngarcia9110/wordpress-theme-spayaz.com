@@ -22,8 +22,8 @@ use Roots\Sage\Wrapper;
       <div class="page-header">
         <h1><?php echo the_title(); ?></h1>
       </div>
-      <div class="wrap container" role="document">
-        <div class="content row space-bottom">
+      <div class="wrap container page-content-wrapper" role="document">
+        <div class="content row">
           <?php include Wrapper\template_path(); ?>
         </div>
       </div>
@@ -42,8 +42,8 @@ use Roots\Sage\Wrapper;
       
       <?php }else{ ?>
     <?php get_template_part('templates/page', 'header');?>
-    <div class="wrap container" role="document">
-      <div class="content row space-bottom">
+    <div class="wrap container page-content-wrapper" role="document">
+      <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->

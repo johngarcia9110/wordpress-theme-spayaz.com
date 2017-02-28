@@ -1,0 +1,13 @@
+.spay-btn-orange{
+  color: #FFFFFF;
+  background-color: $brand-hightlight-secondary;
+  border-bottom: 3px solid darken($brand-hightlight-secondary, 20%);
+  cursor: pointer;
+  &:hover{
+    background-color: darken($brand-hightlight-secondary, 10%);
+    color: #FFFFFF;
+  }
+  &:active{
+    border: 2px inset #e6994d;
+  }
+}

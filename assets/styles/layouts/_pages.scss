@@ -1,5 +1,15 @@
 .page-header{
   text-align: center;
-  padding: 50px;
-  background: $brand-secordary;
+  padding: 80px;
+  background: darken($brand-primary, 10%);
+}
+
+.page-content-wrapper{
+  padding: 35px 25px;
+  background: #FFFFFF;
+}
+
+.home .page-content-wrapper{
+  padding: 0px 35px 25px 25px;
+  background: transparent;
 }

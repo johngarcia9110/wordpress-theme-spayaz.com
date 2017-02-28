@@ -11,9 +11,20 @@ a:focus, a:hover {
 body{
   padding-top: 162px;
   background-image: url(../images/groovepaper.png);
-  color: $main-text;
+  color: lighten($main-text, 10%);
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
+
+.triangle-bkd{
+  position: relative;
+  background-image: url(../images/triangle-bkd.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 // Custom Buttons
 

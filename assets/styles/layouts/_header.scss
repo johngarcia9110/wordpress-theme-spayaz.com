@@ -16,6 +16,7 @@ header{
   .navbar-light .navbar-nav .nav-link{
     color: $brand-primary;
     font-weight: bold;
+    font-size: 1.1rem;
     &:hover, &:active, &:focus{
       color: darken($brand-primary, 10%);
     }
@@ -35,26 +36,31 @@ header{
       color: $nav-background;
       margin: 0px;
       i{
-        background: transparent;
-        width: 30px;
+        text-align: center;
+        width: 28px;
         font-size: 18px;
         color: $brand-primary;
         background: $nav-background;
         margin: 8px 2px;
-        line-height: 20px;
+        line-height: 28px;
         border-radius: 50%;
       }
     }
   }
 }
 
+.dropdown-toggle:after {
+    display: none;
+}
+
 .page-header{
-  margin-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
 } h1 {
   color: #FFF;
-  text-shadow: 1px 1px 20px black;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 48em) {
@@ -69,7 +75,18 @@ header{
     }
     .navbar{
       padding-left: 5px;
-      padding-right: 5px;  
+      padding-right: 5px; 
+      .navbar-brand{
+        max-width: 200px;
+      } 
+    }
+    .navbar-collapse{
+      .dropdown-menu{
+        text-align: center;
+      }
+      .dropdown-item{
+        padding: 10px 1.5rem;
+      }
     }
     .navbar-toggler{
       background: $white;

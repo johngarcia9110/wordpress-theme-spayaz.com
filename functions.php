@@ -33,6 +33,7 @@ function vc_before_init_actions() {
     // Require new custom Element
     require_once( get_template_directory().'/vc-elements/spayaz-pricing-box.php' ); 
     require_once( get_template_directory().'/vc-elements/spayaz-pricing-table.php' ); 
+    require_once( get_template_directory().'/vc-elements/spayaz-career-modal.php' ); 
   
 }
 

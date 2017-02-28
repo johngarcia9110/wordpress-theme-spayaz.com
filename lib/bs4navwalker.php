@@ -113,6 +113,7 @@ class bs4Navwalker extends Walker_Nav_Menu
             $atts['class']       .= ' dropdown-toggle';
             $atts['data-toggle']  = 'dropdown';
         }
+        
         if ($depth > 0) {
             $atts['class'] = 'dropdown-item';
         }

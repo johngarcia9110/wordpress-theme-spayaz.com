@@ -7,10 +7,10 @@
         </div>
         <div class="col-sm-6">
           <div class="location-social pull-right">
-            <span>Follow Us: </span>
-            <a href="<?php echo $facebook ?>"><i class="fa fa-facebook"></i></a>
-            <a href="<?php echo $yelp ?>"><i class="fa fa-yelp"></i></a>
-            <a href="https://twitter.com/wearespayneuter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/spayneuterclinicaz" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/wearespayneuter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/spayneuterclinic/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/wearespayneuter/" target="_blank"><i class="fa fa-pinterest"></i></a>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
              'container_class' => 'collapse navbar-collapse pull-xs-right',
              'menu_id'         => false,
              'menu_class'      => 'nav navbar-nav',
-             'depth'           => 2,
+             'depth'           => 3,
              'fallback_cb'     => 'bs4navwalker::fallback',
              'walker'          => new bs4navwalker()
           ]);?>

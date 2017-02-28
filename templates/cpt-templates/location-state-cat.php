@@ -20,17 +20,19 @@
             <p><?php echo $hours ?></p>
           </div>
           <div class="location-address">
-            <p><strong>Address: </strong><?php echo $address ?></p>
+            <p><strong>Address: </strong></p>
+            <p><?php echo $address ?></p>
           </div>
           <div class="location-phone">
-            <p><strong>Phone:</strong> <?php echo $phoneNumber ?></p>
+            <p><strong>Phone:</strong></p>
+            <p><a href:"tel:<?php echo $phoneNumber ?>"><?php echo $phoneNumber ?></a></p>
           </div>
-          <a class="btn btn-lg btn-success" href="<?php the_permalink();?>"> View This Location </a>
+          <a class="btn btn-lg spay-btn-orange" href="<?php the_permalink();?>"> View This Location </a>
         </div>
         
       </div>
     </div>
   <div class="entry-summary">
-    <?php the_excerpt(); ?>
+    <?php //the_excerpt(); ?>
   </div>
 </article>
